@@ -9,6 +9,5 @@
 import UIKit
 
 struct Game {
-    var p1Points = 5
-    var p2Points = 5
+    var gamePoints = 5
 }

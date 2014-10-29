@@ -47,8 +47,8 @@
                     <navigationItem key="navigationItem" id="hLc-k3-tee"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="tapMe" destination="BlP-QL-AyF" id="CiR-03-rQp"/>
-                        <outlet property="tapMe2" destination="cFI-zc-yE8" id="UdX-x5-j1p"/>
+                        <outlet property="p1Button" destination="BlP-QL-AyF" id="CiR-03-rQp"/>
+                        <outlet property="p2Button" destination="cFI-zc-yE8" id="UdX-x5-j1p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1N-kv-h1j" sceneMemberID="firstResponder"/>

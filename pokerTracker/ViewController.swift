@@ -11,47 +11,49 @@ import UIKit
 
 
 class ViewController: UIViewController {
+    
     //Disable View Rotation
     override func shouldAutorotate() -> Bool {
         return false
     }
-    
     override func supportedInterfaceOrientations() -> Int {
         return UIInterfaceOrientation.Portrait.rawValue
     }
     
     //Buttons
-    @IBOutlet var tapMe: UIButton!
-    @IBOutlet var tapMe2: UIButton!
+    @IBOutlet var p1Button: UIButton!
+    @IBOutlet var p2Button: UIButton!
 
     //Initial Game
-    // Why can't p1Count and p2Count be initialized as Integers and why do they have to be before viewDidLoad()?
-    var game = Game()
+    //***********************************************
+    // 1. Why can't p1Count and p2Count be initialized as Integers and why do they have to be before viewDidLoad()?
+    // 2. How come I can initialize a new Game() and where is it best to layout my new varialbes/objects
+    //***********************************************
+    
     var p1Count = 0
     var p2Count = 0
-   
+    var game = Game()
     
-    
-    //Border Colors
-    var p1BorderColor : UIColor = UIColor( red: 0.78, green: 0.07, blue:0.07, alpha: 1.0 )
-    var p2BorderColor : UIColor = UIColor( red: 0.45, green: 0.11, blue:0.7, alpha: 1.0 )
-
     override func viewDidLoad() {
         
-        p1Count = game.p1Points
-        p2Count = game.p2Points
-
-
         super.viewDidLoad()
+       
+        p1Count = game.gamePoints
+        p2Count = game.gamePoints
+
+        //Border Colors
+        var p1BorderColor : UIColor = UIColor( red: 0.78, green: 0.07, blue:0.07, alpha: 1.0 )
+        var p2BorderColor : UIColor = UIColor( red: 0.45, green: 0.11, blue:0.7, alpha: 1.0 )
+
         //Buttons to Circles and Flip first
-        tapMe.layer.cornerRadius = tapMe.bounds.size.width / 2.0
-        tapMe.layer.borderWidth = 5
-        tapMe.layer.borderColor = p1BorderColor.CGColor
-        tapMe.titleLabel?.transform = CGAffineTransformMakeRotation(3.14)
+        p1Button.layer.cornerRadius = p1Button.bounds.size.width / 2.0
+        p1Button.layer.borderWidth = 5
+        p1Button.layer.borderColor = p1BorderColor.CGColor
+        p1Button.titleLabel?.transform = CGAffineTransformMakeRotation(3.14)
         
-        tapMe2.layer.cornerRadius = tapMe2.bounds.size.width / 2.0
-        tapMe2.layer.borderWidth = 5
-        tapMe2.layer.borderColor = p2BorderColor.CGColor
+        p2Button.layer.cornerRadius = p2Button.bounds.size.width / 2.0
+        p2Button.layer.borderWidth = 5
+        p2Button.layer.borderColor = p2BorderColor.CGColor
         
         self.startGame()
     }
@@ -64,12 +66,12 @@ class ViewController: UIViewController {
         refreshScore()
     }
     
-    func p1Rules(){
+    func p1Score(){
         ++p1Count
         --p2Count
     }
     
-    func p2Rules(){
+    func p2Score(){
         ++p2Count
         --p1Count
     }
@@ -82,30 +84,24 @@ class ViewController: UIViewController {
     }
     
     func refreshScore(){
-        tapMe.setTitle("\(p1Count)", forState: UIControlState.Normal)
-        tapMe2.setTitle("\(p2Count)", forState: UIControlState.Normal)
+        p1Button.setTitle("\(p1Count)", forState: UIControlState.Normal)
+        p2Button.setTitle("\(p2Count)", forState: UIControlState.Normal)
     }
     
-    
+    //Player Buttons
     @IBAction func p2Action(sender: AnyObject) {
-        p2Rules()
+        p2Score()
         refreshScore()
         if isWin(p1Count){
             println("Player2 Wins")
         }
-        
     }
-    
-    
     @IBAction func p1Action(sender: AnyObject) {
-        p1Rules()
+        p1Score()
         refreshScore()
         if isWin(p2Count){
             println("Player1 Wins")
         }
     }
-    
-    
-    
 }
 
