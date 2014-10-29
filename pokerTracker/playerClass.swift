@@ -6,4 +6,13 @@
 //  Copyright (c) 2014 Andrew Larson. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class playerClass: NSObject {
+    
+    var name = String()
+    var totalWins = Int()
+    
+    
+    
+}

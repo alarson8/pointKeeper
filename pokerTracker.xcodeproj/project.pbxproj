@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		E8198D521A004C6A005326DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8198D511A004C6A005326DA /* AppDelegate.swift */; };
 		E8198D541A004C6A005326DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8198D531A004C6A005326DA /* ViewController.swift */; };
-		E8198D571A004C6A005326DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8198D551A004C6A005326DA /* Main.storyboard */; };
 		E8198D591A004C6A005326DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8198D581A004C6A005326DA /* Images.xcassets */; };
 		E8198D5C1A004C6A005326DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8198D5A1A004C6A005326DA /* LaunchScreen.xib */; };
 		E8198D681A004C6B005326DA /* pokerTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8198D671A004C6B005326DA /* pokerTrackerTests.swift */; };
+		E81C0B6C1A00CC150084CB67 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81C0B6B1A00CC150084CB67 /* ViewControllerHome.swift */; };
+		E81C0B6E1A00CE7C0084CB67 /* Next.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81C0B6D1A00CE7C0084CB67 /* Next.storyboard */; };
+		E822DA081A009323003FC6AD /* playerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822DA071A009323003FC6AD /* playerClass.swift */; };
+		E822DA0A1A00940E003FC6AD /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822DA091A00940E003FC6AD /* game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +33,15 @@
 		E8198D501A004C6A005326DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8198D511A004C6A005326DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8198D531A004C6A005326DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E8198D561A004C6A005326DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8198D581A004C6A005326DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E8198D5B1A004C6A005326DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E8198D611A004C6B005326DA /* pokerTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pokerTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8198D661A004C6B005326DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8198D671A004C6B005326DA /* pokerTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokerTrackerTests.swift; sourceTree = "<group>"; };
+		E81C0B6B1A00CC150084CB67 /* ViewControllerHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
+		E81C0B6D1A00CE7C0084CB67 /* Next.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Next.storyboard; sourceTree = "<group>"; };
+		E822DA071A009323003FC6AD /* playerClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playerClass.swift; sourceTree = "<group>"; };
+		E822DA091A00940E003FC6AD /* game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +83,12 @@
 		E8198D4E1A004C6A005326DA /* pokerTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E81C0B6D1A00CE7C0084CB67 /* Next.storyboard */,
+				E81C0B6B1A00CC150084CB67 /* ViewControllerHome.swift */,
 				E8198D511A004C6A005326DA /* AppDelegate.swift */,
 				E8198D531A004C6A005326DA /* ViewController.swift */,
-				E8198D551A004C6A005326DA /* Main.storyboard */,
+				E822DA071A009323003FC6AD /* playerClass.swift */,
+				E822DA091A00940E003FC6AD /* game.swift */,
 				E8198D581A004C6A005326DA /* Images.xcassets */,
 				E8198D5A1A004C6A005326DA /* LaunchScreen.xib */,
 				E8198D4F1A004C6A005326DA /* Supporting Files */,
@@ -192,7 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8198D571A004C6A005326DA /* Main.storyboard in Resources */,
+				E81C0B6E1A00CE7C0084CB67 /* Next.storyboard in Resources */,
 				E8198D5C1A004C6A005326DA /* LaunchScreen.xib in Resources */,
 				E8198D591A004C6A005326DA /* Images.xcassets in Resources */,
 			);
@@ -213,7 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8198D541A004C6A005326DA /* ViewController.swift in Sources */,
+				E822DA081A009323003FC6AD /* playerClass.swift in Sources */,
+				E822DA0A1A00940E003FC6AD /* game.swift in Sources */,
 				E8198D521A004C6A005326DA /* AppDelegate.swift in Sources */,
+				E81C0B6C1A00CC150084CB67 /* ViewControllerHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +248,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E8198D551A004C6A005326DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E8198D561A004C6A005326DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E8198D5A1A004C6A005326DA /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -405,6 +409,7 @@
 				E8198D6D1A004C6B005326DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8198D6E1A004C6B005326DA /* Build configuration list for PBXNativeTarget "pokerTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				E8198D701A004C6B005326DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

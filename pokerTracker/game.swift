@@ -1,9 +1,14 @@
 //
-//  gameClass.swift
+//  gameStruct.swift
 //  pokerTracker
 //
 //  Created by Andrew Larson on 10/28/14.
 //  Copyright (c) 2014 Andrew Larson. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+struct Game {
+    var p1Points = 5
+    var p2Points = 5
+}
